@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>TeX Watcher</title>
     <script>
-document.onload = function(){
+function load(){
     document.getElementById('result').value = document.cookie.substring(5);
 }
     </script>
@@ -12,7 +12,7 @@ document.onload = function(){
 <body>
     Напишите здесь \(\TeX\):<br>
     <textarea id="txt"></textarea><br>
-    <button onclick="create()">Показать</button><button onclick="save()">Сохранить</button><br>
+    <button onclick="create()">Показать</button><button onclick="save()">Сохранить</button><button onclick="load()">Загрузить</button><br>
     Результат:<br><br>
     <div id="result"></div>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
