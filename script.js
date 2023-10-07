@@ -1,3 +1,7 @@
+document.onload = function(){
+    document.getElementById('result').innerHTML = document.cookie.substring(5);
+}
+
 function create(){
     document.getElementById('result').innerHTML = document.getElementById('txt').value;
     MathJax.typeset();
