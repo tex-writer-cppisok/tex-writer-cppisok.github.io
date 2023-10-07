@@ -1,5 +1,5 @@
 document.onload = function(){
-    document.getElementById('result').innerHTML = document.cookie.substring(5);
+    document.getElementById('result').value = document.cookie.substring(5);
 }
 
 function create(){
