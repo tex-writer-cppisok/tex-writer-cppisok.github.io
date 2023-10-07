@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>TeX Watcher</title>
+    <script>
+document.onload = function(){
+    document.getElementById('result').value = document.cookie.substring(5);
+}
+    </script>
 </head>
 <body>
     Напишите здесь \(\TeX\):<br>
